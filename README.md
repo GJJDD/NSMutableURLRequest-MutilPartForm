@@ -8,7 +8,7 @@
 4、创建负责上传文件的URL\n
 5、调用requestWithURL:fileName:localFilePath:方法就实现了上传任意文件功能了\n
 
-分类方法描述
+分类方法描述\n
 /**
  *  建立要上传文件的请求
  *
@@ -38,7 +38,6 @@
     // 3. connection
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
         
-//        id result = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
  
         if (connectionError) {
             [MBProgressHUD showError:@"上传失败"];
